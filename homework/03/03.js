@@ -25,10 +25,6 @@ async function add(ctx) {
   ctx.response.body = await render.newPost();
 }
 
-async function search(ctx){
-  ctx.response.body = await render.Search();
-}
-
 async function show(ctx) {
   const id = ctx.params.id;
   const post = posts[id];
