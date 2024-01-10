@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Example</title>
+  <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+
+  <button id="scrollBtn" onclick="scrollToTop()">回到頂部</button>
+
+
+  <div class="operator">
+
+
+
+    <div class="container"><!-- 腎臟 -->
+
+      <div class="button-image-container">
+        <table class="table-picture">
+          <tr>
+            <th>幹員立繪</th>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://prts.wiki/w/%E5%9C%A3%E7%BA%A6%E9%80%81%E8%91%AC%E4%BA%BA" >官方網站介紹</a>
+            </td>
+          </tr>
+        </table>
+        <div class="button-group">
+          <button class="btn" id="buttonA"> <img src="圖_test/j.png"> 精英化零</button>
+          <button class="btn" id="buttonB"> <img src="圖_test/k.png"> 精英化二</button>
+        </div>
+        <div class="image-group">
+          <img id="image1" src="圖_test/f.png" alt="圖片1">
+        </div>
+      </div>
+
+      <br>
+      <!-- 第一個表格 -->
+      <div class="table-container">
+        <table class="table-name">
+          <tr>
+            <th>幹員名稱</th>
+          </tr>
+          <tr>
+            <td class="text-cell" >聖約送葬人</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- 第二個表格 -->
+        <table class="table-introduce">
+            <tr>
+            <th>分支</th>
+            <th class="text-cell">分支介紹:收割者</th>
+            </tr>
+            <tr>
+            <td class="image-cell" rowspan="2">
+              <div class="image-wrapper">
+                  <img src="圖_test/b.png" alt="圖片">
+              </div>
+            </td>
+            <td class="description-cell">無法被友方角色治療，攻擊造成群體傷害，每攻擊到一個敵人回復自身50生命，最大生效數等於阻擋數</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table class="talent-1">
+          <tr>
+            <th>第一天賦:受選之人</th>
+          </tr>
+          <tr>
+            <td>攻擊時有20%機率額外攻擊一次，技能期間每消耗1顆彈藥這個機率提升5%，技能結束時重置</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <table class="talent-1">
+          <tr>
+            <th>第二天賦:銃彈共感</th>
+          </tr>
+          <tr>
+            <td>每有一個【拉特蘭】幹員在場，自身的彈藥類技能彈藥上限+1（最多4層）</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- 表格 -->
+        <table class="table-skill1">
+          <!-- 第一列 -->
+          <tr>
+            <td class="image-cell2"><img src="圖_test/c.png" alt="圖片"></td>
+            <td class="last-cell3" width="250px">遺囑執行</td>
+            <td>
+              <div class="color-overlay">
+                <p class="recovery-cell">攻擊回復</p>
+              </div>
+              <div class="color-overlay">
+                <p class="trigger-cell">自動觸發</p>
+              </div>
+            </td>
+            <td class="last-cell" colspan="3">技能1</td>
+          </tr>
+          <!-- 第二列 -->
+          <tr class="second-row">
+            <td class="image-cell2" >等級</td>
+            <td class="last-cell" colspan="2">描述</td>
+            <td width="50px">初始</td>
+            <td width="50px">消耗</td>
+            <td width="50px">持續</td>
+          </tr>
+          <!-- 第三列 -->
+          <tr>
+            <td class="image-cell2" >RANKIII</td>
+            <td class="last-cell2" colspan="2">攻擊範圍擴大，攻擊力+50%，攻擊時無視目標400的防禦力
+              攻擊裝有8發彈藥，打完後結束（可隨時停止技能）</td>
+            <td>0</td>
+            <td>8</td>
+            <td></td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- 表格 -->
+        <table class="table-skill2">
+          <!-- 第一列 -->
+          <tr>
+            <td class="image-cell2"><img src="圖_test/d.png" alt="圖片"></td>
+            <td class="last-cell3" width="250px">近身銃鬥</td>
+            <td>
+              <div class="color-overlay">
+                <p class="recovery-cell">攻擊回復</p>
+              </div>
+              <div class="color-overlay">
+                <p class="trigger-cell">手動觸發</p>
+              </div>
+            </td>
+            <td class="last-cell" colspan="3">技能2</td>
+          </tr>
+          <!-- 第二列 -->
+          <tr class="second-row">
+            <td class="image-cell2" >等級</td>
+            <td class="last-cell" colspan="2">描述</td>
+            <td width="50px">初始</td>
+            <td width="50px">消耗</td>
+            <td width="50px">持續</td>
+          </tr>
+          <!-- 第三列 -->
+          <tr>
+            <td class="image-cell2" >RANKIII</td>
+            <td class="last-cell2" colspan="2">攻擊力+80%，防禦力+80%，阻擋數+1，受到敵人的近戰攻擊時有40%機率閃避並補充1顆彈藥
+                攻擊裝有12發彈藥，打完後結束（可隨時停止技能）</td>
+            <td>6</td>
+            <td>12</td>
+            <td></td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- 表格 -->
+        <table class="table-skill3">
+          <!-- 第一列 -->
+          <tr>
+            <td class="image-cell2"><img src="圖_test/e.png" alt="圖片"></td>
+            <td class="last-cell3" width="250px">聖約決裁</td>
+            <td>
+              <div class="color-overlay">
+                <p class="recovery-cell">攻擊回復</p>
+              </div>
+              <div class="color-overlay">
+                <p class="trigger-cell">手動觸發</p>
+              </div>
+            </td>
+            <td class="last-cell" colspan="3">技能3</td>
+          </tr>
+          <!-- 第二列 -->
+          <tr class="second-row">
+            <td class="image-cell2" >等級</td>
+            <td class="last-cell" colspan="2">描述</td>
+            <td width="50px">初始</td>
+            <td width="50px">消耗</td>
+            <td width="50px">持續</td>
+          </tr>
+          <!-- 第三列 -->
+          <tr>
+            <td class="image-cell2" >RANKIII</td>
+            <td class="last-cell2" colspan="2">攻擊間隔略微增大(+0.5)，攻擊範圍擴大，攻擊力+180%，每消耗1顆彈藥攻擊力額外+6%（最多30層），特性的回復生命效果提高至3倍；技能結束時，對技能期間攻擊過的目標造成相當於攻擊力250%的物理傷害
+                攻擊裝有16發彈藥，打完後結束（可隨時停止技能）</td>
+            <td>12</td>
+            <td>24</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+  
+      
+    </div>
+
+    <div class="container"><!-- 繆繆 -->
+
+      <div class="button-image-container">
+        <table class="table-picture">
+          <tr>
+            <th>幹員立繪</th>
+          </tr>
+          <tr>
+            <td>
+              <a href="https://prts.wiki/w/%E7%BC%AA%E5%B0%94%E8%B5%9B%E6%80%9D" >官方網站介紹</a>
+            </td>
+          </tr>
+        </table>
+        <div class="button-group">
+          <button class="btn" id="buttonC"> <img src="圖\固定元件\精零.png"> 精英化零</button>
+          <button class="btn" id="buttonD"> <img src="圖\固定元件\精二.png"> 精英化二</button>
+        </div>
+        <div class="image-group">
+          <img id="image2" src="wp111b\homework\期末作業\圖\幹員\繆爾賽思\精零.png" alt="圖片2">
+        </div>
+      </div>
+
+      <br>
+      <!-- 第一個表格 -->
+      <div class="table-container">
+        <table class="table-name">
+          <tr>
+            <th>幹員名稱</th>
+          </tr>
+          <tr>
+            <td class="text-cell" >繆爾賽思</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- 第二個表格 -->
+        <table class="table-introduce">
+            <tr>
+            <th>分支</th>
+            <th class="text-cell">分支介紹:戰術家</th>
+            </tr>
+            <tr>
+            <td class="image-cell" rowspan="2">
+              <div class="image-wrapper">
+                  <img src="wp111b\homework\期末作業\圖\固定元件\戰術家.png" alt="圖片">
+              </div>
+            </td>
+            <td class="description-cell">可以在攻擊範圍內選擇一次戰術點來召喚援軍，自身攻擊援軍阻擋的敵人時攻擊力提升至150%</td>
+            </tr>
+        </table>
+
+        <br>
+
+        <table class="talent-1">
+          <tr>
+            <th>第一天賦:淨水即生命</th>
+          </tr>
+          <tr>
+            <td>可召喚流形來複製待部署幹員的大部分（90%）屬性（生命上限、攻擊、防禦、法抗、阻擋數、攻擊間隔、攻擊範圍、傷害類型、根據近/遠程位獲得特殊特性）協助作戰，其被擊敗後會在25秒後自動刷新</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <table class="talent-1">
+          <tr>
+            <th>第二天賦:開源節流</th>
+          </tr>
+          <tr>
+            <td>攜帶時【萊茵生命】幹員部署費用-2，首名【萊茵生命】幹員部署費用額外-1</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- 表格 -->
+        <table class="table-skill1">
+          <!-- 第一列 -->
+          <tr>
+            <td class="image-cell2"><img src="wp111b\homework\期末作業\圖\幹員\繆爾賽思\1.png" alt="圖片"></td>
+            <td class="last-cell3" width="250px">漸進性潤化</td>
+            <td>
+              <div class="color-overlay">
+                <p class="autovery-cell">自動回復</p>
+              </div>
+              <div class="color-overlay">
+                <p class="trigger-cell">手動觸發</p>
+              </div>
+            </td>
+            <td class="last-cell" colspan="3">技能1</td>
+          </tr>
+          <!-- 第二列 -->
+          <tr class="second-row">
+            <td class="image-cell2" >等級</td>
+            <td class="last-cell" colspan="2">描述</td>
+            <td width="50px">初始</td>
+            <td width="50px">消耗</td>
+            <td width="50px">持續</td>
+          </tr>
+          <!-- 第三列 -->
+          <tr>
+            <td class="image-cell2" >RANKIII</td>
+            <td class="last-cell2" colspan="2">期間逐漸回复13點費用，自身與流形攻擊力+50%，攻擊速度+50</td>
+            <td>8</td>
+            <td>28</td>
+            <td>15</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- 表格 -->
+        <table class="table-skill2">
+          <!-- 第一列 -->
+          <tr>
+            <td class="image-cell2" ><img src="wp111b\homework\期末作業\圖\幹員\繆爾賽思\2.png" alt="圖片"></td>
+            <td class="last-cell3" width="250px">生態耦合</td>
+            <td>
+              <div class="color-overlay">
+                <p class="autovery-cell">自動回復</p>
+              </div>
+              <div class="color-overlay">
+                <p class="trigger-cell">手動觸發</p>
+              </div>
+            </td>
+            <td class="last-cell" colspan="3">技能2</td>
+          </tr>
+          <!-- 第二列 -->
+          <tr class="second-row">
+            <td class="image-cell2" >等級</td>
+            <td class="last-cell" colspan="2">描述</td>
+            <td width="50px">初始</td>
+            <td width="50px">消耗</td>
+            <td width="50px">持續</td>
+          </tr>
+          <!-- 第三列 -->
+          <tr>
+            <td class="image-cell2" >RANKIII</td>
+            <td class="last-cell2" colspan="2">立即獲得15點費用，自身與流形攻擊力+50%，若流形為近戰複製體時，每秒回复5%的生命值，獲得25%的庇護，若為遠程複製體時，攻擊變為二連擊，隨機攻擊範圍內的目標</td>
+            <td>18</td>
+            <td>35</td>
+            <td>15</td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- 表格 -->
+        <table class="table-skill3">
+          <!-- 第一列 -->
+          <tr>
+            <td class="image-cell2"><img src="wp111b\homework\期末作業\圖\幹員\繆爾賽思\3.png" alt="圖片"></td>
+            <td class="last-cell3" width="250px">淺層非熵適應</td>
+            <td>
+              <div class="color-overlay">
+                <p class="autovery-cell">自動回復</p>
+              </div>
+              <div class="color-overlay">
+                <p class="trigger-cell">手動觸發</p>
+              </div>
+            </td>
+            <td class="last-cell" colspan="3">技能3</td>
+          </tr>
+          <!-- 第二列 -->
+          <tr class="second-row">
+            <td class="image-cell2" >等級</td>
+            <td class="last-cell" colspan="2">描述</td>
+            <td width="50px">初始</td>
+            <td width="50px">消耗</td>
+            <td width="50px">持續</td>
+          </tr>
+          <!-- 第三列 -->
+          <tr>
+            <td class="image-cell2" >RANKIII</td>
+            <td class="last-cell2" colspan="2">立即獲得15點費用，自身與流形攻擊力+50%，若流形為近戰複製體時每2秒對周圍八格敵人向自己中心小力度地拖拽並使所有阻擋的單位持續暈眩，若為遠程複製體時刷新所有流形且攻擊附帶持續1.5秒的束縛</td>
+            <td>18</td>
+            <td>35</td>
+            <td>15</td>
+          </tr>
+        </table>
+      </div>
+  
+      
+    </div>
+
+
+
+  </div>
+
+  <script src="test.js"></script>
+
+</body>
+</html>
+

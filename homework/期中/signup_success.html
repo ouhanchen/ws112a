@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      border: 1px solid #ddd;
+      border-radius: 20px; /* 添加圓角 */
+      margin: 20px; /* 控制距離 */
+    }
+
+    tr {
+      text-align: center;
+    }
+
+    .first-row {
+      background-color: #ffffff; /* 設定第一列的背景顏色 */
+    }
+
+    /* 設定第一張圖片的樣式 */
+    #arknight {
+      width: 100%;
+      max-width: 150px; /* 控制最大寬度 */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .second-row {
+      background-color: #f2f2f2; /* 設定第二列的背景顏色 */
+    }
+
+    .second-row td:first-child {
+      width: 40%; /* 設置第一個 td 元素的寬度為父容器的 40% */
+    }
+
+    /* 設定第二張圖片的樣式 */
+    #RHODES_ISLAND {
+      width: 100%;
+      max-width: 105px; /* 控制最大寬度 */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .success_advice {
+        font-weight: bold;
+        font-size: large;
+    }
+
+    td {
+      border: 1px solid #000000;
+      padding: 5px;
+    }
+
+    input {
+      width: 85%;
+      padding: 5px;
+      margin: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 50%;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <tr class="first-row">
+    <td colspan="2">
+      <img id="arknight" src="圖/固定元件/明日方舟_黑.png" alt="圖片">
+    </td>
+  </tr>
+  <tr class="second-row">
+    <td>
+      <img id="RHODES_ISLAND" src="圖/固定元件/羅德島.png" alt="圖片">
+    </td>
+    <td class="success_advice">
+      註冊成功!
+      <br>
+      <a href="/login.html">返回登入</a>
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>

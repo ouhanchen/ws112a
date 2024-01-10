@@ -1,0 +1,169 @@
+export function layout(title, content) {
+    return `
+    <html lang="en">
+    <head>
+      <title>${title}</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+    
+        body {
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin: 0;
+          padding: 0;
+        }
+    
+        header {
+          width: 100%;
+          background-color: #000000;
+          text-align: center;
+        }
+    
+        table {
+          width: 50%;
+          border-collapse: collapse;
+          border: 1px solid #ddd;
+          border-radius: 20px; /* 添加圓角 */
+          margin: 20px auto; /* 控制距離 */
+        }
+    
+        nav {
+          background-color: #f5f5f5;
+          width: 100%;
+          padding: 5px;
+          font-size: 15px;
+          font-weight: bold;
+        }
+    
+        nav ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+        }
+      
+        nav ul li {
+          display: inline-block;
+          margin-right: 10px;
+          font-size: x-large;
+        }
+    
+        tr {
+          text-align: center;
+        }
+    
+        /* 設定第一張圖片的樣式 */
+        #arknight {
+          width: 100%;
+          max-width: 250px; /* 控制最大寬度 */
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+    
+        .second-row {
+          background-color: #f2f2f2; /* 設定第二列的背景顏色 */
+        }
+    
+        .second-row td:first-child {
+          width: 25%; /* 設置第一個 td 元素的寬度為父容器的 25% */
+        }
+    
+        /* 設定第二張圖片的樣式 */
+        #RHODES_ISLAND {
+          width: 100%;
+          max-width: 50px; /* 控制最大寬度 */
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+    
+        .from_text {
+            font-weight: bold;
+            font-size: medium;
+            vertical-align: middle;
+            padding: 5px;
+        }
+    
+        td {
+          border: 1px solid #000000;
+          padding: 5px;
+        }
+    
+        input {
+          width: 85%;
+          padding: 5px;
+          margin: 5px;
+          box-sizing: border-box;
+        }
+    
+        input[type="submit"] {
+          width: 50%;
+          font-weight: bold;
+        }
+        
+      </style>
+    </head>
+    <body>
+      <section id="content">
+        ${content}
+      </section>
+    </body>
+    </html>
+    `
+  }
+
+export function list(users, currentUser) {
+    console.log('list: user=', currentUser)
+    let list = []
+    for (let user of users) {
+        list.push(`
+        <table>
+            <tr class="second-row">
+                <td>
+                    <img id="RHODES_ISLAND" src="圖/固定元件/羅德島.png" alt="圖片">
+                </td>
+                <td class="from_text">
+                    Dr.${user.user_game_id}
+                </td>
+            </tr>
+            <tr class="third_row">
+                <td rowspan="2">
+                    <p class="from_text">這位博士留下的訊息:</p>
+                    <p>${user.user_introduce}</p>
+                </td>
+                <td rowspan="2">
+                    <p class="from_text">這位博士喜歡的幹員:</p>
+                    <p>功能製作中</p>
+                </td>
+            </tr>
+            <tr>
+            </tr>
+            <tr class="second-row">
+                <td colspan="2" class="from_text">
+                    認識完其他博士了嗎?
+                    <a href="JavaScript:window.history.back()">返回</a>
+                    或
+                    <a href="/logout">登出</a>
+                </td>
+            </tr>
+        </table>
+      `);
+    }
+
+    let content = `
+    <header>
+      <img id="arknight" src="圖/固定元件/明日方舟_白.png" alt="圖片">
+    </header>
+
+    <nav>
+      <ul>
+        <li>歡迎來到博士列表!</li>
+      </ul>
+    </nav>
+    ${list.join('\n')}
+    `;
+    return layout('users', content);
+}

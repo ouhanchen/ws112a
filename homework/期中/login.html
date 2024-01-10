@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    table {
+      width: 50%;
+      border-collapse: collapse;
+      border: 1px solid #ddd;
+      border-radius: 20px; /* 添加圓角 */
+      margin: 20px; /* 控制距離 */
+    }
+
+    tr {
+      text-align: center;
+    }
+
+    .first-row {
+      background-color: #000000; /* 設定第二列的背景顏色 */
+    }
+
+    /* 設定第一張圖片的樣式 */
+    #arknight {
+      width: 100%;
+      max-width: 150px; /* 控制最大寬度 */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .second-row {
+      background-color: #f2f2f2; /* 設定第二列的背景顏色 */
+    }
+
+    /* 設定第二張圖片的樣式 */
+    #RHODES_ISLAND {
+      width: 100%;
+      max-width: 50px; /* 控制最大寬度 */
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .no_account_advice,
+    .welcome_advice {
+        font-weight: bold;
+        font-size: large;
+    }
+
+    td {
+      border: 1px solid #000000;
+      padding: 5px;
+    }
+
+    input {
+      width: 85%;
+      padding: 5px;
+      margin: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type="submit"] {
+      width: 50%;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<table>
+  <form action="/login.html" method="post">
+    <tr class="first-row">
+      <td colspan="2">
+        <img id="arknight" src="圖\固定元件\明日方舟_白.png" alt="圖片">
+      </td>
+    </tr>
+    <tr class="second-row">
+      <td>
+        <img id="RHODES_ISLAND" src="圖\固定元件\羅德島.png" alt="圖片">
+      </td>
+      <td class="welcome_advice">
+        歡迎使用明日方舟六星幹員一覽表!
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <input type="text" placeholder="帳號" name="user_account"/>
+        <br>
+        <input type="password" placeholder="密碼" name="password"/>
+        <br>
+        <input type="submit" value="登入"/>
+      </td>
+    </tr>
+    <tr class="second-row">
+      <td colspan="2" class="no_account_advice">
+          沒有帳號嗎?那你或許想:
+          <a href="/signup.html">註冊新帳號</a>
+          或
+          <a href="/operator_list_un_login.html">不登入繼續使用</a>
+      </td>
+    </tr>
+  </form>
+</table>
+
+</body>
+</html>
